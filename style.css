@@ -127,6 +127,7 @@ header {
     height: 70%;
 }
 
+
 .button--center {
    
     display: flex;
@@ -166,15 +167,13 @@ header {
     align-items: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding-top: 20px;
-
-    
+    padding-top: 20px;    
 }
 
 /*======== PESQUISA ===================*/
 
 .search {
-    /*background: yellow;*/
+    
     margin: auto;
     display: flex;
     justify-content: center;
@@ -192,6 +191,7 @@ header {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 
 .search--img {
     display: flex;
@@ -318,4 +318,100 @@ footer {
 
 .footer--menu a:hover {
     text-decoration: underline;
+}
+
+
+/*============= RESPONSIVE ===============*/
+
+@media (max-width: 376px) {
+
+    .container--google {
+        
+        margin: auto;
+    }
+
+   header {
+      
+       width: 100%;
+       margin: auto;
+   }
+
+   .container--menu {
+       margin-right: -50px;
+       margin-left: 60px;
+   }
+   .container--button button {
+       font-size: 8px;
+       padding: 8px;
+       
+   }
+
+   .container--gmail a,
+   .container--images a {
+       font-size: 12px;
+       margin-left: -40px;
+       
+   }
+
+   .container--gmail a {
+       text-decoration: underline;
+       color: blue;
+   }
+
+    .img-search {
+        /*background: green;*/
+        margin-left: 20px;
+        color: transparent;
+    }
+
+    .img-keyboard {
+        width: 0px;
+        height: 0px;
+    }
+
+    .img-microphone {
+        margin: 5px;
+        width: 15px;
+        height: 20px;
+
+        padding-right: 10px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    .search--input {
+        width: 70%;
+    }
+
+    .button {
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+    
+
+        width: 100px;
+        height: 30px;
+    }
+
+    .container--disponibilizado {
+        font-size: 12px;
+    }
+
+        .footer {
+            font-size: 13px;
+        }
+
+    .footer--menu {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .logo-google img {
+        width: 50%;
+    }
+    
+    .search {
+        width: 80%;
+    }
+
 }
